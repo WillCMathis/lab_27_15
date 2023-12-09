@@ -14,15 +14,15 @@ private:
    
 public:
    PlaylistNode() {
-        uniqueID = "none";
-        songName = "none";
-        artistName = "none";
-        songLength = 0;
-        nextNodePtr = 0;
-    }
-    
-    PlaylistNode(string uniqueIDInit, string songNameInit, string artistNameInit, int songLengthInit);
-    PlaylistNode(string uniqueIDInit, string songNameInit, string artistNameInit, int songLengthInit, PlaylistNode* nextLoc);
+		uniqueID = "none";
+		songName = "none";
+		artistName = "none";
+		songLength = 0;
+		nextNodePtr = 0;
+	}
+	
+	PlaylistNode(string uniqueIDInit, string songNameInit, string artistNameInit, int songLengthInit);
+	PlaylistNode(string uniqueIDInit, string songNameInit, string artistNameInit, int songLengthInit, PlaylistNode* nextLoc);
    string GetID();
    string GetSongName();
    string GetArtistName();
