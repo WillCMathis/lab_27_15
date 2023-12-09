@@ -8,7 +8,7 @@ PlaylistNode::PlaylistNode(string uniqueIDInit, string songNameInit, string arti
 	this->nextNodePtr = 0;
 }
 
-PlaylistNode::PlaylistNode(string uniqueIDInit, string songNameInit, string artistNameInit, int songLengthInit, PlaylistNode* nextLoc) {
+PlaylistNode::PlaylistNode(string uniqueIDInit, string songNameInit, string artistNameInit, int songLengthInit, PlaylistNode* nextLoc ) {
 	this->uniqueID = uniqueIDInit;
 	this->songName = songNameInit;
 	this->artistName = artistNameInit;
@@ -42,5 +42,5 @@ void PlaylistNode::SetNext(PlaylistNode* nodePtr){
 	this->nextNodePtr = nodePtr;
 }
 void PlaylistNode::PrintPlaylistNode(){
-   cout << "Unique ID: " << this->GetID() << endl << "Song Name: " << this->GetSongName() << endl << "Artist Name: " << this->GetArtistName() << endl << "Song Length (in seconds): " << this->GetSongLength() << endl << endl;
+   cout << "Unique ID: " << this->GetID() << endl << "Song Name: " << this->GetSongName() << endl << "Artist Name: " << this->GetArtistName() << endl << "Song Length (in seconds): " << this->GetSongLength() << endl;
 }
